@@ -23,7 +23,7 @@ public class Spawnear2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scoreCanvas.score >= 10){    
+        if(scoreCanvas.score >= 20){    
             time += Time.deltaTime;
             if (time >= interpolationPeriod)
             {
@@ -37,7 +37,7 @@ public class Spawnear2 : MonoBehaviour
 
     GameObject RandomObjToSpawn(){
         float randomNumber = Random.Range(0.0f, 1.0f);
-        int startInstaKill = 75;
+        int startInstaKill = 150;
         if (scoreCanvas.score > startInstaKill) {
             if (randomNumber < 0.45f) {
                 return proyectil;

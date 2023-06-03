@@ -37,7 +37,7 @@ public class Spawnear1 : MonoBehaviour
 
     GameObject RandomObjToSpawn(){
         float randomNumber = Random.Range(0.0f, 1.0f);
-        int startInstaKill = 75;
+        int startInstaKill = 150;
         if (scoreCanvas.score > startInstaKill) {
             if (randomNumber < 0.45f) {
                 return proyectil;

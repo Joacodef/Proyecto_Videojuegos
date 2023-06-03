@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     public float currentHealth;
 
     public ScoreCanvas scoreCanvas;
-
     public HealthBar healthBar;
 
     // Start is called before the first frame update
@@ -48,8 +47,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if (currentHealth - damage <= 0)
-        {
+        if (currentHealth - damage <= 0) {
             Die();
         }
         else
@@ -62,11 +60,11 @@ public class Player : MonoBehaviour
 
     public void Heal(float heal)
     {
-        if (currentHealth + heal > maxHealth)
-        {
+        if (currentHealth + heal > maxHealth) {
             currentHealth = maxHealth;
+            scoreCanvas.AddScore(10);
         }
-        else{
+        else {
             currentHealth += heal;
         }
         healthBar.setHealth(currentHealth);
