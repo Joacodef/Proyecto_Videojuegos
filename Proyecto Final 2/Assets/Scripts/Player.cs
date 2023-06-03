@@ -40,8 +40,13 @@ public class Player : MonoBehaviour
         // Make the game object move in 2d with arrow keys with respect to the world
         transform.Translate(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * movSpeed * Time.deltaTime, Space.World);
         
-        if(scoreCanvas.score >= 40){
-            TakeDamage(0.1f * Time.deltaTime * scoreCanvas.score);
+        if (scoreCanvas.score >= 50) {
+            if (scoreCanvas < 100) {
+                TakeDamage(0.1f * Time.deltaTime * scoreCanvas.score);
+            }
+            else {
+                TakeDamage(0.1f * Time.deltaTime * 100);
+            }
         }
     }
 
