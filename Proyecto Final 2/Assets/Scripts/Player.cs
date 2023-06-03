@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         transform.Translate(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0) * movSpeed * Time.deltaTime, Space.World);
         
         if (scoreCanvas.score >= 50) {
-            if (scoreCanvas < 100) {
+            if (scoreCanvas.score < 100) {
                 TakeDamage(0.1f * Time.deltaTime * scoreCanvas.score);
             }
             else {
