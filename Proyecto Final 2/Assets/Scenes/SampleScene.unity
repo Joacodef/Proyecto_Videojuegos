@@ -854,6 +854,7 @@ MonoBehaviour:
   fuerza: 0
   proyectil: {fileID: 7008197450946578360, guid: 41e563fd246b4ba4c810e99850bcbc00, type: 3}
   ayuda: {fileID: 3882569016304942087, guid: 3a9e0f1ef0921a74b9902d52337fe6f6, type: 3}
+  instaKill: {fileID: 7008197450946578360, guid: 8f0aa9bf94d1ff7419e831c3b49493b3, type: 3}
   scoreCanvas: {fileID: 282083646}
 --- !u!1 &602607702
 GameObject:
@@ -1117,6 +1118,7 @@ MonoBehaviour:
   fuerza: 0
   proyectil: {fileID: 7008197450946578360, guid: 41e563fd246b4ba4c810e99850bcbc00, type: 3}
   ayuda: {fileID: 3882569016304942087, guid: 3a9e0f1ef0921a74b9902d52337fe6f6, type: 3}
+  instaKill: {fileID: 7008197450946578360, guid: 8f0aa9bf94d1ff7419e831c3b49493b3, type: 3}
   scoreCanvas: {fileID: 282083646}
 --- !u!1 &861327564 stripped
 GameObject:
@@ -1139,6 +1141,7 @@ MonoBehaviour:
   fuerza: 0
   proyectil: {fileID: 7008197450946578360, guid: 41e563fd246b4ba4c810e99850bcbc00, type: 3}
   ayuda: {fileID: 3882569016304942087, guid: 3a9e0f1ef0921a74b9902d52337fe6f6, type: 3}
+  instaKill: {fileID: 7008197450946578360, guid: 8f0aa9bf94d1ff7419e831c3b49493b3, type: 3}
   scoreCanvas: {fileID: 282083646}
 --- !u!1 &898968635
 GameObject:
@@ -1299,6 +1302,7 @@ MonoBehaviour:
   fuerza: 0
   proyectil: {fileID: 7008197450946578360, guid: 41e563fd246b4ba4c810e99850bcbc00, type: 3}
   ayuda: {fileID: 3882569016304942087, guid: 3a9e0f1ef0921a74b9902d52337fe6f6, type: 3}
+  instaKill: {fileID: 7008197450946578360, guid: 8f0aa9bf94d1ff7419e831c3b49493b3, type: 3}
   scoreCanvas: {fileID: 282083646}
 --- !u!1001 &1144026019
 PrefabInstance:
