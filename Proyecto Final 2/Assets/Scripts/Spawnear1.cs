@@ -37,21 +37,31 @@ public class Spawnear1 : MonoBehaviour
 
     GameObject RandomObjToSpawn(){
         float randomNumber = Random.Range(0.0f, 1.0f);
-        if (randomNumber < 0.4f){
-            return proyectil;
-        }
-        else if(randomNumber < 0.8f){
-            return ayuda;
-        }
-        else {
-            return instaKill;
+        int startInstaKill = 75;
+        if (scoreCanvas.score > startInstaKill) {
+            if (randomNumber < 0.45f) {
+                return proyectil;
+            }
+            else if (randomNumber < 0.9f) {
+                return ayuda;
+            }
+            else {
+                return instaKill;
+            }
+        } else {
+            if (randomNumber < 0.5f) {
+                return proyectil;
+            }
+            else {
+                return ayuda;
+            }
         }
     }
 
     void Patrol(){
         // generate random number between 0 and 1
         float randomNumber = Random.Range(0.0f, 1.0f);
-        if(randomNumber < 0.5f){
+        if (randomNumber < 0.5f){
             float randomPos = Random.Range(-9.5f, 9.5f);
             transform.position = new Vector3(transform.position.x, randomPos, transform.position.z);
         }

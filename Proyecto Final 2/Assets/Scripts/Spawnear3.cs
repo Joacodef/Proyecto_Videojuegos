@@ -9,6 +9,7 @@ public class Spawnear3 : MonoBehaviour
     float time;
     public GameObject proyectil;
     public GameObject ayuda;
+    public GameObject instaKill;
     public ScoreCanvas scoreCanvas;
 
     // Start is called before the first frame update
@@ -36,11 +37,24 @@ public class Spawnear3 : MonoBehaviour
 
     GameObject RandomObjToSpawn(){
         float randomNumber = Random.Range(0.0f, 1.0f);
-        if(randomNumber < 0.5f){
-            return proyectil;
-        }
-        else{
-            return ayuda;
+        int startInstaKill = 75;
+        if (scoreCanvas.score > startInstaKill) {
+            if (randomNumber < 0.45f) {
+                return proyectil;
+            }
+            else if (randomNumber < 0.9f) {
+                return ayuda;
+            }
+            else {
+                return instaKill;
+            }
+        } else {
+            if (randomNumber < 0.5f) {
+                return proyectil;
+            }
+            else {
+                return ayuda;
+            }
         }
     }
 
