@@ -12,19 +12,17 @@ public class BallCollision : MonoBehaviour
     {
         Debug.Log("Collision detected");
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
-        if (collision.gameObject.tag == "FireProjectile")
-        {
-            if(this.gameObject.tag == "WaterBall")
+        if (collision.gameObject.tag == "FireProjectile") {
+            if (this.gameObject.tag == "WaterBall")
             {
                 player.TakeDamage(damage);
             }
-            else if(this.gameObject.tag == "FireBall")
+            else if (this.gameObject.tag == "FireBall")
             {
                 player.Heal(damage);
             }
         }
-        else if (collision.gameObject.tag == "WaterProjectile")
-        {
+        else if (collision.gameObject.tag == "WaterProjectile") {
             if (this.gameObject.tag == "WaterBall")
             {
                 player.Heal(damage);
@@ -33,6 +31,9 @@ public class BallCollision : MonoBehaviour
             {
                 player.TakeDamage(damage);
             }
+        }
+        else if (collision.gameObject.tag == "instaKill") {
+            player.Die();
         }
 
         Destroy(collision.gameObject);

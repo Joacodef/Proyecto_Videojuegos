@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3717465446953522200}
   - component: {fileID: -4182467743414726592}
   m_Layer: 1
-  m_Name: WaterProjectile
-  m_TagString: WaterProjectile
+  m_Name: InstaKill
+  m_TagString: instaKill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 12aceebc3785bd6439897d3f213068dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1769f5986fa0d545981001297dbd8d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
