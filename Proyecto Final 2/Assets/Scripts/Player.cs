@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     {
         sentido = 1;
         rotationSpeed = 150f;
-        movSpeed = 20f;
+        movSpeed = 15f;
         maxHealth = 100f;
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
