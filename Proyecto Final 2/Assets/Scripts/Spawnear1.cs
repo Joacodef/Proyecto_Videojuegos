@@ -23,7 +23,7 @@ public class Spawnear1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scoreCanvas.score >= 0){    
+        if (scoreCanvas.score >= 0){    
             time += Time.deltaTime;
             if (time >= interpolationPeriod)
             {
