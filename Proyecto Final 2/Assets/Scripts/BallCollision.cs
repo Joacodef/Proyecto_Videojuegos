@@ -32,7 +32,7 @@ public class BallCollision : MonoBehaviour
                 player.TakeDamage(damage);
             }
         }
-        else if (collision.gameObject.tag == "instaKill") {
+        else if (collision.gameObject.tag == "instaKill" || collision.gameObject.tag == "BossProjectile") {
             player.Die();
         }
 

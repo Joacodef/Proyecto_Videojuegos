@@ -20,6 +20,7 @@ public class ScoreCanvas : MonoBehaviour
     void Update() {
         score += Time.deltaTime * multiplier;
         scoreText.text = "Score: " + Mathf.Round(score);
+        GameControl.control.score = Mathf.Round(score);
     }
 
     public void AddScore(float scoreToAdd) {
