@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float rotationSpeed;
     public float maxHealth;
     public float currentHealth;
+    public bool devMode;
 
     public ScoreCanvas scoreCanvas;
     public HealthBar healthBar;
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
         rotationSpeed = 150f;
         movSpeed = 15f;
         maxHealth = 100f;
+        devMode = false;
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
     }
@@ -32,8 +34,7 @@ public class Player : MonoBehaviour
         transform.Rotate(new Vector3(0, 0, rotationSpeed * sentido) * Time.deltaTime);
 
         // If the player presses spacebar, the rotation direction changes
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             sentido *= -1;
         }
 
@@ -47,6 +48,11 @@ public class Player : MonoBehaviour
             else {
                 TakeDamage(0.05f * Time.deltaTime * 100);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftAlt)) {
+            Debug.Log("DevMode On");
+            devMode = true;
         }
     }
 
@@ -79,8 +85,10 @@ public class Player : MonoBehaviour
     public void Die()
     {
         // Change scene to the game over scene
-        Debug.Log("Game Over");
-        SceneManager.LoadScene("GameOver");
+        if (devMode == false) {
+            Debug.Log("Game Over");
+            SceneManager.LoadScene("GameOver");
+        } 
     }
     
 }
