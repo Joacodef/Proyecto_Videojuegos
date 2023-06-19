@@ -23,13 +23,25 @@ public class SpawnBoss : MonoBehaviour
 
         if (scoreCanvas.score % 250 <= 1 && scoreCanvas.score > 0 && canSpawn == true) {
             Debug.Log("boss debe aparecer");
-            Instantiate(Boss, transform.position, Quaternion.identity);
+            
+            int random = Random.Range(0, 4);
+            if(random == 0){
+                Instantiate(Boss, new Vector3(-28,0,0), Quaternion.identity);
+            }
+            else if(random == 1){
+                Instantiate(Boss, new Vector3(28,0,0), Quaternion.identity);
+            }
+            else if(random == 2){
+                Instantiate(Boss, new Vector3(0,-15,0), Quaternion.identity);
+            }
+            else if(random == 3){
+                Instantiate(Boss, new Vector3(0,15,0), Quaternion.identity);
+            }
             canSpawn = false;
         }
 
         if (!canSpawn){
             if (spawnCounter < spawnDelay){
-    
                 spawnCounter += Time.deltaTime;
             } else {
                 canSpawn = true;
