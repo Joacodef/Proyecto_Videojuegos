@@ -11,6 +11,9 @@ Por determinar
 
 ## Cosas por hacer:
 
+### Bugs:
+- [ ] En el exe, el boss a veces no aparece
+
 ### Música y efectos de sonido:
 - [ ] Música de fondo durante el juego
 - [ ] Música para el boss

@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.setHealth(currentHealth);
-            Debug.Log("Damage taken");
+            //Debug.Log("Damage taken");
         }
     }
 

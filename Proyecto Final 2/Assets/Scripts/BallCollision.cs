@@ -6,7 +6,14 @@ using UnityEngine.SceneManagement;
 public class BallCollision : MonoBehaviour
 {
     public Player player;
+    public Transform elementPos;
     public float damage = 10f;
+
+    void Update(){
+        //transform.rotation = player.transform.rotation;
+        transform.position = elementPos.position;
+        Debug.Log("Player rotation: " + player.transform.rotation+ "   rotation: " + transform.rotation);
+    }
 
     void OnCollisionEnter(Collision collision)
     {
