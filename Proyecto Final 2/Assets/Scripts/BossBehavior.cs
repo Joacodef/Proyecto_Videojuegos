@@ -33,8 +33,8 @@ public class BossBehavior : MonoBehaviour
         {
             time = Random.Range(0f, interpolationPeriod);
             GameObject balita = Instantiate(RandomObjToSpawn(), transform.position, Quaternion.identity);
-            balita.GetComponent<Rigidbody>().AddForce((player.transform.position-transform.position) * fuerza);
-            
+            balita.transform.up = (player.transform.position-transform.position);
+            balita.GetComponent<Rigidbody>().AddForce((player.transform.position-transform.position) * fuerza); 
         }
         Patrol();
     }

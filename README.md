@@ -11,39 +11,18 @@ Por determinar
 
 ## Cosas por hacer:
 
-### Bugs:
-- [x] Proyectiles chocan entre sí
-- [x] no se están eliminando los Ayuda(Clone)
+### Música y efectos de sonido:
+- [ ] Música de fondo durante el juego
+- [ ] Música para el boss
+- [ ] Música para el menú
+- [ ] Música de muerte
+- [ ] Efectos de sonido al agarrar proyectil, según si agarras algo bueno o malo
+- [ ] Voces de los personajes
 
-### Core Game:
-- [x] Contador de puntaje (Rodrigo)
-- [x] Definir comportamiento en bordes de la pantalla (Fin del juego)
-
-### Importantes
-- [ ] sumar puntaje al comer cosas buenas con salud maxima
-- [x] Hacer distintos tipos de spawners/enemigos (Anibal)
-- [x] Hacer que los spawners/enemigos vayan cambiando a medida que avanza el juego (Anibal)
-- [x] restart al perder
-- [x] barra de vida
-
-### Menos importantes
-- [ ] Projectil que mata de una 
-- [x] Hacer menú principal
-- [ ] Hacer tutorial
-- [ ] Definir y avanzar en estética y lore del juego
-- [x] Hacer pantalla de muerte
-- [ ] highscore system
-
-### Posibles Power-ups:
-- Ralentizar tiempo
-- Destruir todos los proyectiles en pantalla
-- Quitar spawner
-
-### Posibles Power-downs:
-- Aumentar velocidad de movimiento 
-- Aumentar velocidad de rotación de las pelotitas
-- Agregar spawners
-- Invertir controles
-- Freeze (no poder moverse)
+### Visual/Juice:
+- [ ] Animación que resalte la barra de vida cuando gana o pierde vida
+- [ ] Animaciones al agarrar objetos (números que saltan, algún efecto en los personajes)
+- [ ] Animación de los proyectiles
+- [ ] Definir un fondo
 
 

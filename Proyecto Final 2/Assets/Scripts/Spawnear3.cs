@@ -29,6 +29,7 @@ public class Spawnear3 : MonoBehaviour
             {
                 time = Random.Range(0f, interpolationPeriod);
                 GameObject balita = Instantiate(RandomObjToSpawn(), transform.position, Quaternion.identity);
+                balita.transform.up = -transform.position;
                 balita.GetComponent<Rigidbody>().AddForce(-transform.position * fuerza);
                 Patrol();
             }
