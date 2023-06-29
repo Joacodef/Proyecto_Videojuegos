@@ -11,6 +11,7 @@ public class Spawnear2 : MonoBehaviour
     public GameObject ayuda;
     public GameObject instaKill;
     public ScoreCanvas scoreCanvas;
+    public SoundController soundController;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +48,7 @@ public class Spawnear2 : MonoBehaviour
                 return ayuda;
             }
             else {
+                soundController.goblinSound.Play();
                 return instaKill;
             }
         } else {

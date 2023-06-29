@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public float currentHealth;
     public bool devMode;
 
+    public SoundController soundController;
     public ScoreCanvas scoreCanvas;
     public HealthBar healthBar;
 
@@ -63,6 +64,9 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+
+        soundController.takeDamageSound.Play();
+        Debug.Log("Damaged");
         if (currentHealth - damage <= 0) {
             Die();
         }
@@ -75,6 +79,7 @@ public class Player : MonoBehaviour
 
     public void Heal(float heal)
     {
+        soundController.takeHealSound.Play();
         if (currentHealth + heal > maxHealth) {
             currentHealth = maxHealth;
             scoreCanvas.AddScore(10);

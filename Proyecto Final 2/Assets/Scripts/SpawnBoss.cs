@@ -10,6 +10,7 @@ public class SpawnBoss : MonoBehaviour
     public bool canSpawn;
     public float spawnDelay;
     public int numBossSpawned;
+    public SoundController soundController;
     float spawnCounter;
 
     // Start is called before the first frame update
@@ -26,6 +27,12 @@ public class SpawnBoss : MonoBehaviour
     void Update() {
 
         if (scoreCanvas.score > 250  && scoreCanvas.score > (numBossSpawned+1)*250 && scoreCanvas.score > 0 && canSpawn == true) {
+
+            //Se para musica de background y parte musica Boss
+            soundController.backGroundMusic.Stop();
+            soundController.bossMusic.Play();
+
+
             numBossSpawned++;
             Debug.Log("boss número "+numBossSpawned+" debe aparecer, score: " +scoreCanvas.score);
             

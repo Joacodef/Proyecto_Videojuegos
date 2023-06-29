@@ -180,3 +180,4 @@ MonoBehaviour:
   proyectil: {fileID: 7008197450946578360, guid: 41e563fd246b4ba4c810e99850bcbc00, type: 3}
   ayuda: {fileID: 7008197450946578360, guid: 3d46d5fcad3e02d4da65fcb4e1b96641, type: 3}
   instaKill: {fileID: 7008197450946578360, guid: 8f0aa9bf94d1ff7419e831c3b49493b3, type: 3}
+  soundController: {fileID: 2090383508998548332, guid: 104506bc0e70f9e489cc3bd94caceb21, type: 3}

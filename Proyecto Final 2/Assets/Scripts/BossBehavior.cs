@@ -13,6 +13,7 @@ public class BossBehavior : MonoBehaviour
     public GameObject ayuda;
     public GameObject instaKill;
     GameObject player;
+    public SoundController soundController;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,7 @@ public class BossBehavior : MonoBehaviour
             return ayuda;
         }
         else {
+            soundController.goblinSound.Play();
             return instaKill;
         }
     }

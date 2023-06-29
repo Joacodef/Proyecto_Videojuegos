@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class WallCollisions : MonoBehaviour
 {
-    
-    
+    public SoundController soundController;
+
     // Update is called once per frame
     void Update()
     {
@@ -16,8 +16,15 @@ public class WallCollisions : MonoBehaviour
     {
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "FireProjectile" || collision.gameObject.tag == "WaterProjectile" || 
-        collision.gameObject.tag == "instaKill" || collision.gameObject.tag == "BossProjectile")
+        collision.gameObject.tag == "instaKill")
         {
+            Destroy(collision.gameObject);
+        }
+        else if(collision.gameObject.tag == "BossProjectile"){
+
+            soundController.bossMusic.Stop();
+            soundController.backGroundMusic.Play();
+
             Destroy(collision.gameObject);
         }
     }

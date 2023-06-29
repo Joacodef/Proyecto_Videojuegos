@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2090383508998548333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2090383508998548331}
+  - component: {fileID: 2090383508998548332}
+  m_Layer: 0
+  m_Name: soundControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2090383508998548331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090383508998548333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2090383508998548332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090383508998548333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea45dc725cb4b7c469862b48092d53c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  takeHealSound: {fileID: 3038228849331298808, guid: f7b344c0e3cff6f47b7064df0084a858, type: 3}
+  takeDamageSound: {fileID: 1297977693266159619, guid: 58bce3f1a07a5b544aac2fd462aeff1e, type: 3}
+  backGroundMusic: {fileID: 7923650175192304648, guid: 9f23254a0b7931e42b30f88da794bfcd, type: 3}
+  goblinSound: {fileID: 5529522478456313691, guid: 38da43ac88085a4499174cbe0ea433b9, type: 3}
+  goblinBossSound: {fileID: 3802787321011069750, guid: fd5849184e777d64089ea6cf8fdaadca, type: 3}
+  bossMusic: {fileID: 1106582557152564301, guid: ffa68a06e5a0e8542846aa31a197e141, type: 3}
