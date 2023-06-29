@@ -178,7 +178,5 @@ MonoBehaviour:
   interpolationPeriod: 0
   fuerza: 0
   proyectil: {fileID: 7008197450946578360, guid: 41e563fd246b4ba4c810e99850bcbc00, type: 3}
-  ayuda: {fileID: 3882569016304942087, guid: 3a9e0f1ef0921a74b9902d52337fe6f6, type: 3}
+  ayuda: {fileID: 7008197450946578360, guid: 3d46d5fcad3e02d4da65fcb4e1b96641, type: 3}
   instaKill: {fileID: 7008197450946578360, guid: 8f0aa9bf94d1ff7419e831c3b49493b3, type: 3}
-  scoreCanvas: {fileID: 0}
-  player: {fileID: 0}
