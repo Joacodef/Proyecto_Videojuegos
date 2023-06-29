@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class ScoreText : MonoBehaviour
 {
 
-    public TMP_Text canvasText;
+    public Text canvasText;
     // Start is called before the first frame update
     void Start()
     {

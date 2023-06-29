@@ -6,22 +6,37 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
-    public bool flashRed;
-    public float flashRedTime;
+    public bool flashWhite;
+    public float flashWhiteTime;
+    public bool flashGreen;
+    public float flashGreenTime;
 
     private void Start(){
-        flashRed = false;
-        flashRedTime = 0;
+        flashWhite = false;
+        flashWhiteTime = 0;
+        flashGreen = false;
+        flashGreenTime = 0;
     }
 
     private void Update(){
-        if (flashRed){
-            flashRedTime += 1 * Time.deltaTime;
+        if (flashWhite){
+            flashWhiteTime += 1 * Time.deltaTime;
             slider.fillRect.GetComponent<Image>().color = Color.white;
-            if (flashRedTime >= 0.1){
-                flashRed = false;
-                flashRedTime = 0;
-                slider.fillRect.GetComponent<Image>().color = Color.red;
+            if (flashWhiteTime >= 0.1){
+                flashWhite = false;
+                flashWhiteTime = 0;
+                slider.fillRect.GetComponent<Image>().color = new Color32(226,57,57,223);
+            }
+        }
+        if (flashGreen){
+            flashGreenTime += 1 * Time.deltaTime;
+            //change the color of the health bar to a darker red:
+            slider.fillRect.GetComponent<Image>().color = Color.red;
+            
+            if (flashGreenTime >= 0.1){
+                flashGreen = false;
+                flashGreenTime = 0;
+                slider.fillRect.GetComponent<Image>().color = new Color32(226,57,57,223);
             }
         }
     }

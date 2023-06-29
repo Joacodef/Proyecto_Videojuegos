@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0d9379526bca4d145badbea0fcb12569
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Reggae One
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: db67551b5144d164f90500f7b4429d06, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
