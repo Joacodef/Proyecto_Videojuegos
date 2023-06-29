@@ -16,6 +16,8 @@ public class SpawnBoss : MonoBehaviour
     void Start()
     {
         flag = false;
+        spawnCounter = 0;
+        spawnDelay = 5;
     }
 
     // Update is called once per frame
