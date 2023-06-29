@@ -9,6 +9,8 @@ public class BallCollision : MonoBehaviour
     public Transform elementPos;
     public float damage = 10f;
     public HealthBar healthBar;
+    public ParticleSystem fireParticles;
+    public ParticleSystem waterParticles;
 
     void Update(){
         //transform.rotation = player.transform.rotation;
@@ -30,6 +32,7 @@ public class BallCollision : MonoBehaviour
             {
                 player.Heal(damage);
                 healthBar.flashGreen = true;
+                fireParticles.Play();
             }
         }
         else if (collision.gameObject.tag == "WaterProjectile") {
@@ -37,6 +40,7 @@ public class BallCollision : MonoBehaviour
             {
                 player.Heal(damage);
                 healthBar.flashGreen = true;
+                waterParticles.Play();
             }
             else if (this.gameObject.tag == "FireBall")
             {
