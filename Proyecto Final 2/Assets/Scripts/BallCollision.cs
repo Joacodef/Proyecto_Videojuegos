@@ -13,12 +13,12 @@ public class BallCollision : MonoBehaviour
     void Update(){
         //transform.rotation = player.transform.rotation;
         transform.position = elementPos.position;
-        Debug.Log("Player rotation: " + player.transform.rotation+ "   rotation: " + transform.rotation);
+        //Debug.Log("Player rotation: " + player.transform.rotation+ "   rotation: " + transform.rotation);
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision detected");
+        //Debug.Log("Collision with the player detected");
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "FireProjectile") {
             if (this.gameObject.tag == "WaterBall")

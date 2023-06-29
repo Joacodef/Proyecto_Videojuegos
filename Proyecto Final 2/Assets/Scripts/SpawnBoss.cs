@@ -9,7 +9,7 @@ public class SpawnBoss : MonoBehaviour
     public bool flag;
     public bool canSpawn;
     public float spawnDelay;
-
+    public int numBossSpawned;
     float spawnCounter;
 
     // Start is called before the first frame update
@@ -18,13 +18,16 @@ public class SpawnBoss : MonoBehaviour
         flag = false;
         spawnCounter = 0;
         spawnDelay = 5;
+        canSpawn = true;
+        numBossSpawned = 0;
     }
 
     // Update is called once per frame
     void Update() {
 
-        if (scoreCanvas.score % 250 <= 1 && scoreCanvas.score > 0 && canSpawn == true) {
-            Debug.Log("boss debe aparecer");
+        if (scoreCanvas.score > 250  && scoreCanvas.score > (numBossSpawned+1)*250 && scoreCanvas.score > 0 && canSpawn == true) {
+            numBossSpawned++;
+            Debug.Log("boss número "+numBossSpawned+" debe aparecer, score: " +scoreCanvas.score);
             
             int random = Random.Range(0, 4);
             if(random == 0){
@@ -39,7 +42,7 @@ public class SpawnBoss : MonoBehaviour
             else if(random == 3){
                 Instantiate(Boss, new Vector3(0,15,0), Quaternion.identity);
             }
-            canSpawn = false;
+            canSpawn = false  ;
         }
 
         if (!canSpawn){

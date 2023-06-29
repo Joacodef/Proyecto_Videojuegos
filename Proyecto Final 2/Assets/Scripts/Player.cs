@@ -54,6 +54,11 @@ public class Player : MonoBehaviour
             Debug.Log("DevMode On");
             devMode = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.RightAlt)) {
+            Debug.Log("DevMode Off");
+            devMode = false;
+        }
     }
 
     public void TakeDamage(float damage)
@@ -78,7 +83,7 @@ public class Player : MonoBehaviour
             currentHealth += heal;
         }
         healthBar.setHealth(currentHealth);
-        Debug.Log("Healed");
+        //Debug.Log("Healed");
     }
 
     public void Die()
