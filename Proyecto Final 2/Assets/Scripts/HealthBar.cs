@@ -31,7 +31,8 @@ public class HealthBar : MonoBehaviour
         if (flashGreen){
             flashGreenTime += 1 * Time.deltaTime;
             //change the color of the health bar to a darker red:
-            slider.fillRect.GetComponent<Image>().color = Color.red;
+            //slider.fillRect.GetComponent<Image>().color = Color.red;
+            slider.fillRect.GetComponent<Image>().color = new Color32(57,226,57,223);
             
             if (flashGreenTime >= 0.1){
                 flashGreen = false;
