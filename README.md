@@ -9,8 +9,6 @@ Controlas dos pelotitas de diferente tipo que rotan constantemente, hay proyecti
 ## Cosas por hacer:
 
 ### Bugs:
-- [ ] Sonidos de goblins lanzados por goblin boss no funcionan
-- [ ] Sonidos de daño dejan de funcionar tras 60 puntos
 
 ### Música y efectos de sonido:
 - [x] Música de fondo durante el juego
@@ -18,10 +16,10 @@ Controlas dos pelotitas de diferente tipo que rotan constantemente, hay proyecti
 - [x] Música para el menú
 - [x] Música de muerte
 - [x] Efectos de sonido al agarrar proyectil, según si agarras algo bueno o malo
-- [ ] Efecto de sonido para el boss (una risa grave o algo así)
+- [x] Efecto de sonido para el boss (una risa grave o algo así)
 
 ### Visual/Juice:
 - [x] Animación que resalte la barra de vida cuando gana o pierde vida
 - [x] Definir un fondo
 - [x] Animaciones al agarrar objetos que dan vida
-- [ ] Animaciones al agarrar objetos que quitan vida
+- [x] Animaciones al agarrar objetos que quitan vida

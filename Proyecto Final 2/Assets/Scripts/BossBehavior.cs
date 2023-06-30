@@ -24,6 +24,7 @@ public class BossBehavior : MonoBehaviour
         speed = 0.1f;
         direccion = -transform.position;
         player = GameObject.Find("Pivote");
+        player.GetComponent<Player>().playBossSound();
     }
 
     // Update is called once per frame
@@ -49,7 +50,7 @@ public class BossBehavior : MonoBehaviour
             return ayuda;
         }
         else {
-            soundController.goblinSound.Play();
+            player.GetComponent<Player>().playGoblinSound();
             return instaKill;
         }
     }

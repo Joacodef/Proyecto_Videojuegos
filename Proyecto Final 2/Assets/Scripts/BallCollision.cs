@@ -9,8 +9,11 @@ public class BallCollision : MonoBehaviour
     public Transform elementPos;
     public float damage = 10f;
     public HealthBar healthBar;
-    public ParticleSystem fireParticles;
-    public ParticleSystem waterParticles;
+    public ParticleSystem fireHealingPart;
+    public ParticleSystem fireDamagePart;
+    public ParticleSystem waterHealingPart;
+    public ParticleSystem waterDamagePart;
+    public SoundController soundController;
 
     void Update(){
         //transform.rotation = player.transform.rotation;
@@ -27,12 +30,14 @@ public class BallCollision : MonoBehaviour
             {
                 player.TakeDamage(damage);
                 healthBar.flashWhite = true;
+                waterDamagePart.Play();
+                soundController.takeDamageSound.Play();
             }
             else if (this.gameObject.tag == "FireBall")
             {
                 player.Heal(damage);
                 healthBar.flashGreen = true;
-                fireParticles.Play();
+                fireHealingPart.Play();
             }
         }
         else if (collision.gameObject.tag == "WaterProjectile") {
@@ -40,12 +45,14 @@ public class BallCollision : MonoBehaviour
             {
                 player.Heal(damage);
                 healthBar.flashGreen = true;
-                waterParticles.Play();
+                waterHealingPart.Play();
             }
             else if (this.gameObject.tag == "FireBall")
             {
                 player.TakeDamage(damage);
                 healthBar.flashWhite = true;
+                fireDamagePart.Play();
+                soundController.takeDamageSound.Play();
             }
         }
         else if (collision.gameObject.tag == "instaKill" || collision.gameObject.tag == "BossProjectile") {

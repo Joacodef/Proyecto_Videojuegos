@@ -64,9 +64,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-
-        soundController.takeDamageSound.Play();
-        Debug.Log("Damaged");
+        //Debug.Log("Damaged");
         if (currentHealth - damage <= 0) {
             Die();
         }
@@ -98,6 +96,14 @@ public class Player : MonoBehaviour
             Debug.Log("Game Over");
             SceneManager.LoadScene("GameOver");
         } 
+    }
+
+    public void playGoblinSound() {
+        soundController.goblinSound.Play();
+    }
+
+    public void playBossSound() {
+        soundController.goblinBossSound.Play();
     }
     
 }
