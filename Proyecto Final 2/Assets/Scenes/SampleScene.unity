@@ -23383,6 +23383,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1106582557152564301, guid: ffa68a06e5a0e8542846aa31a197e141, type: 3}
+      propertyPath: m_Volume
+      value: 0.758
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106582557152564301, guid: ffa68a06e5a0e8542846aa31a197e141, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 256f8b6e6cd5ccc4eaf8866e84b7bd21, type: 3}
     - target: {fileID: 1106582557152564302, guid: ffa68a06e5a0e8542846aa31a197e141, type: 3}
       propertyPath: m_Name
       value: bossMusic
@@ -23439,6 +23447,10 @@ PrefabInstance:
     - target: {fileID: 1297977693266159618, guid: 58bce3f1a07a5b544aac2fd462aeff1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297977693266159619, guid: 58bce3f1a07a5b544aac2fd462aeff1e, type: 3}
+      propertyPath: m_Volume
+      value: 0.79
       objectReference: {fileID: 0}
     - target: {fileID: 1297977693266159620, guid: 58bce3f1a07a5b544aac2fd462aeff1e, type: 3}
       propertyPath: m_Name
@@ -23534,6 +23546,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3038228849331298808, guid: f7b344c0e3cff6f47b7064df0084a858, type: 3}
+      propertyPath: m_Volume
+      value: 0.776
+      objectReference: {fileID: 0}
     - target: {fileID: 3038228849331298809, guid: f7b344c0e3cff6f47b7064df0084a858, type: 3}
       propertyPath: m_Name
       value: healSound
@@ -23591,6 +23607,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3802787321011069750, guid: fd5849184e777d64089ea6cf8fdaadca, type: 3}
+      propertyPath: m_Volume
+      value: 0.712
+      objectReference: {fileID: 0}
     - target: {fileID: 3802787321011069751, guid: fd5849184e777d64089ea6cf8fdaadca, type: 3}
       propertyPath: m_Name
       value: goblinBossSound
@@ -23696,6 +23716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: goblinSound
       objectReference: {fileID: 0}
+    - target: {fileID: 5529522478456313691, guid: 38da43ac88085a4499174cbe0ea433b9, type: 3}
+      propertyPath: m_Volume
+      value: 0.772
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38da43ac88085a4499174cbe0ea433b9, type: 3}
 --- !u!1001 &7923650175703358136
@@ -23705,6 +23729,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7923650175192304648, guid: 9f23254a0b7931e42b30f88da794bfcd, type: 3}
+      propertyPath: m_Volume
+      value: 0.521
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923650175192304648, guid: 9f23254a0b7931e42b30f88da794bfcd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6ad33b4a99efcad4b8302ee2cf32e545, type: 3}
     - target: {fileID: 7923650175192304649, guid: 9f23254a0b7931e42b30f88da794bfcd, type: 3}
       propertyPath: m_RootOrder
       value: 19
